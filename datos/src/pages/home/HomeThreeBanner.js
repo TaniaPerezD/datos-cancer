@@ -80,7 +80,7 @@ const Banner = () => {
                             </div>
                             <div>
                               <span>
-                                <i> TACTO SEGURO</i>
+                                <i> DETECCION ROSA</i>
                               </span>
                             </div>
                           </div>
@@ -147,7 +147,7 @@ const Banner = () => {
                             <div>
                               <span>
                                  
-                                <i>TACTO SEGURO</i>
+                                <i>DETECCION ROSA</i>
                               </span>
                             </div>
                           </div>

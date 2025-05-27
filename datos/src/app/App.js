@@ -10,6 +10,7 @@ import LoadTop from '../components/ScrollToTop/LoadTop';
 import MainPage from '../pages/home';
 import SignUp from '../pages/signup';
 import SignIn from '../pages/signin';
+import ModeloPage from '../pages/modelo';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -36,6 +37,7 @@ function App() {
         <Route path="/" element={<MainPage/>} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/signin" element={<SignIn />} />
+        <Route path="/modelo" element={<ModeloPage />} />
 
       </Routes>
     </div>
