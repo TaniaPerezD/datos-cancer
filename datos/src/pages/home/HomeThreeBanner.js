@@ -147,16 +147,16 @@ const Banner = () => {
                             <div>
                               <span>
                                  
-                                <i> MEDINOVA</i>
+                                <i>TACTO SEGURO</i>
                               </span>
                             </div>
                           </div>
                           <div className="ed-slider-2-text pb-25">
-                            <div>
+                          <div>
                               <p className=" text-white">
-                                Propuesta de Mejora para la Gestión de Ambulancias y Respuesta a Emergencias en  
+                                Detección Temprana de Cáncer de Mama Mediante Ciencia de Datos  
                                 <br />
-                                La Paz- Bolivia, mediante Algoritmos de Optimización de Rutas 🚀🐱💾
+                                Porque un diagnóstico a tiempo hace la diferencia.💗
                                 <br />
                             
                               </p>
