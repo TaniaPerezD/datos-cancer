@@ -64,22 +64,19 @@ const ModeloSection = () => {
   };
 
   return (
-    // CONTENEDOR DE FONDO QUE OCUPA TODA LA PANTALLA
     <div 
       style={{ 
-        // AQUÍ AGREGAS EL FONDO PARA TODA LA PANTALLA CON OVERLAY
         backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 182, 205, 0.2)), url(${backgroundImg})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
-        backgroundAttachment: 'fixed', // Opcional: efecto parallax
-        minHeight: '100vh', // Altura mínima completa
-        width: '100%', // Ancho completo
-        padding: 0, // Sin padding
-        margin: 0, // Sin margin
+        backgroundAttachment: 'fixed', 
+        minHeight: '100vh', 
+        width: '100%', 
+        padding: 0, 
+        margin: 0, 
       }}
     >
-      {/* CONTENEDOR BOOTSTRAP NORMAL DENTRO DEL FONDO */}
       <div className="container py-5" style={{ overflowX: 'hidden' }}>
         <div className="row align-items-center gx-5">
           {/* Imagen Izquierda */}
@@ -112,7 +109,6 @@ const ModeloSection = () => {
                 boxShadow: '0 10px 25px rgba(0, 0, 0, 0.1)',
               }}
             >
-              {/* Resto del contenido permanece igual */}
               <div className="it-about-3-title-box">
                 <span
                   className="d-inline-block mb-2 fw-semibold"
@@ -142,7 +138,7 @@ const ModeloSection = () => {
                     WebkitTextFillColor: 'transparent',
                   }}
                 >
-                  Sube tu Mamografía
+                  Sube tu Mamografía 
                 </h2>
 
                 <p className="pb-3" style={{ fontSize: '1rem', color: '#5a2a3c' }}>
