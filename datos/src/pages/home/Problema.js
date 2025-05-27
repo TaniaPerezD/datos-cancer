@@ -4,15 +4,15 @@ import SectionTitle from '../../components/SectionTitle';
 
 import shapeImg1 from '../../assets/img/about/about-3-shap-1.png';
 import shapeImg2 from '../../assets/img/about/ed-shape-3-1.png';
-import aboutImg1 from '../../assets/img/about/doctor1 (1) (1).jpg';
-import aboutImg2 from '../../assets/img/about/ambulace2 (1).jpg';
+import aboutImg1 from '../../assets/img/about/cuadradoma2.jpg';
+import aboutImg2 from '../../assets/img/about/ed-shape-3-1.png';
 import MedicalInformationIcon from '@mui/icons-material/MedicalInformation';
 const NorOeste = () => {
   const items = [
     {
       icon: <MedicalInformationIcon style={{ fontSize: 40, color: '#fff' }} />,
       description: [
-        'El sistema de emergencias médicas en la ciudad de La Paz presenta serias deficiencias en la asignación de ambulancias y en la planificación de rutas, lo que genera demoras significativas en la atención y traslado de pacientes. Esta ineficiencia operativa se traduce en tiempos de espera elevados, afectando la capacidad de respuesta en situaciones críticas y comprometiendo la calidad del servicio de salud. La falta de un sistema inteligente que optimice el uso de los recursos disponibles y la selección de rutas adecuadas limita gravemente la efectividad del sistema de emergencias.',
+        'Este proyecto puede contribuir significativamente al sector salud, reduciendo el tiempo de diagnóstico, aumentando la precisión médica y mejorando el pronóstico de pacientes con cáncer de mama. Además, demuestra el valor social de la ciencia de datos aplicada a problemas críticos de salud pública.',
         
       ]
     },
@@ -47,7 +47,7 @@ const NorOeste = () => {
               subTitleClass="it-section-subtitle-5 purple-2"
               subTitle="ACERCA DEL PROYECTO"
               titleClass="it-section-title-3 pb-30"
-              title="PROBLEMA"
+              title="IMPACTO"
               titleImage=""
               description=" "
             />

@@ -11,7 +11,7 @@ const Video = () => {
   const [isOpen, setIsOpen] = useState(false);
   
   // URL del video de YouTube (reemplaza con la URL de tu video)
-  const videoURL = "https://www.youtube.com/embed/KGrVhm0rDY4";
+  const videoURL = "https://youtu.be/vzpXUC3Xps0?si=7KSMK51hdinJ91dK";
 
   const openModal = (e) => {
     e.preventDefault();
@@ -46,9 +46,8 @@ const Video = () => {
               <h3 className="it-video-title">Conoce más sobre nuestro proyecto en este video y prepárate para 
               convertir tus sueños en acciones concretas que impulsen el desarrollo de lo algoritmos.</h3>
               <p>
-                Descubre cómo los algoritmos matemáticos te preparan para 
-                liderar el cambio,  <br />
-                transformar ideas en grandes proyectos y convertirte en el profesional innovador <br />
+                Descubre el impacto que tiene una herramienta que haga la deteccion temprana de cancer,  <br />
+                Una deteccion temprana hace mucho <br />
               </p>
               
             </div>

@@ -8,7 +8,6 @@ import ScrollToTop from '../components/ScrollToTop';
 import LoadTop from '../components/ScrollToTop/LoadTop';
 
 import MainPage from '../pages/home';
-import MapsPage from '../pages/maps';
 import SignUp from '../pages/signup';
 import SignIn from '../pages/signin';
 
@@ -35,7 +34,6 @@ function App() {
       <LoadTop />
       <Routes>
         <Route path="/" element={<MainPage/>} />
-        <Route path="/maps" element={<MapsPage/>} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/signin" element={<SignIn />} />
 

@@ -4,7 +4,7 @@ import SectionTitle from '../../components/SectionTitle';
 
 import shapeImg1 from '../../assets/img/about/about-3-shap-1.png';
 import shapeImg2 from '../../assets/img/about/ed-shape-3-1.png';
-import aboutImg1 from '../../assets/img/about/doctor2 (1) (1).jpg';
+import aboutImg1 from '../../assets/img/about/largama4.png';
 import aboutImg2 from '../../assets/img/about/grafitoo.png';
 import LocalHospitalIcon from '@mui/icons-material/LocalHospital'; // Ícono médico
 
@@ -14,13 +14,10 @@ const About = () => {
     {
       icon: <LocalHospitalIcon style={{ fontSize: 40, color: '#fff' }} />,
       description: [
-      'Desarrollar una plataforma inteligente de gestión de emergencias que integre múltiples fuentes de información, como disponibilidad de ambulancias, estado de los hospitales y ubicación de incidentes en tiempo real.',
-      'Implementar el algoritmo de Dijkstra para determinar la ruta más corta y eficiente entre el punto de emergencia y los hospitales disponibles, reduciendo así el tiempo de traslado.',
-      'Diseñar un modelo automatizado de asignación de recursos que permita seleccionar de forma óptima la ambulancia y el hospital más adecuados, según criterios como cercanía, nivel de emergencia y capacidad hospitalaria.',
-      'Integrar una base de datos ligera y en tiempo real utilizando PocketBase, para almacenar información dinámica sobre hospitales, ambulancias, pacientes y eventos registrados.',
-      'Incorporar WebSockets para habilitar comunicación en tiempo real, permitiendo actualizar la disponibilidad hospitalaria y la localización de ambulancias de manera instantánea.',
-      'Desarrollar una visualización georreferenciada mediante mapas interactivos, que facilite la identificación de rutas, hospitales y situaciones activas en el entorno urbano.',
-      'Implementar una función básica de realidad aumentada (RA) que permita a los usuarios identificar visualmente el hospital más cercano desde el entorno, mediante la cámara del dispositivo móvil.',
+      'Desarrollar un modelo predictivo que identifique patrones asociados con el cáncer de mama.',
+      'Analizar datos clínicos e imágenes mamográficas para encontrar indicadores relevantes.',
+      'Generar herramientas visuales para facilitar la interpretación de los resultados por parte del personal médico.',
+      'Promover una detección temprana que aumente las tasas de supervivencia y reduzca los costos del tratamiento.',
 ]
 
     },

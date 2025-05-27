@@ -4,7 +4,7 @@ import SectionTitle from '../../components/SectionTitle';
 
 import shapeImg1 from '../../assets/img/about/about-3-shap-1.png';
 import shapeImg2 from '../../assets/img/about/ed-shape-3-1.png';
-import aboutImg1 from '../../assets/img/about/doctor1 (1) (1).jpg';
+import aboutImg1 from '../../assets/img/about/largama3.png';
 import aboutImg2 from '../../assets/img/about/ambulace2 (1).jpg';
 import PhoneInTalkIcon from '@mui/icons-material/PhoneInTalk';
 const ObjetivoGeneral = () => {
@@ -12,7 +12,7 @@ const ObjetivoGeneral = () => {
     {
       icon: <PhoneInTalkIcon style={{ fontSize: 40, color: '#fff' }} />,
       description: [
-        'Diseñar e implementar una solución tecnológica inteligente, basada en algoritmos de optimización de rutas y asignación dinámica de recursos, para mejorar la eficiencia del sistema de atención de emergencias y ambulancias en La Paz, Bolivia, reduciendo los tiempos de respuesta, traslado y atención de los pacientes en situaciones críticas.',
+        'Este proyecto tiene como objetivo principal mejorar la detección temprana del cáncer de mama mediante la aplicación de técnicas de ciencia de datos, incluyendo análisis estadístico, aprendizaje automático y visualización de datos. Al aprovechar grandes volúmenes de información clínica e imágenes médicas, buscamos apoyar a los profesionales de la salud en la toma de decisiones más rápidas y precisas.',
         
       ]
     },

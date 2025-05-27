@@ -4,7 +4,7 @@ import SectionTitle from '../../components/SectionTitle';
 
 import shapeImg1 from '../../assets/img/about/about-3-shap-1.png';
 import shapeImg2 from '../../assets/img/about/ed-shape-3-1.png';
-import aboutImg1 from '../../assets/img/about/doctor2 (1) (1).jpg';
+import aboutImg1 from '../../assets/img/about/cuadradoma1.jpg';
 import aboutImg2 from '../../assets/img/about/grafitoo.png';
 import LocalHospitalIcon from '@mui/icons-material/LocalHospital'; // Ícono médico
 
@@ -14,9 +14,8 @@ const About = () => {
     {
       icon: <LocalHospitalIcon style={{ fontSize: 40, color: '#fff' }} />,
       description: [
-      'En Bolivia, los sistemas de atención de emergencias enfrentan serias limitaciones, como la demora en la llegada de ambulancias, la asignación ineficiente de recursos y la falta de criterios dinámicos para seleccionar el hospital adecuado. Estas fallas pueden tener consecuencias críticas para los pacientes.',
-      'Este proyecto propone una plataforma inteligente que optimiza la gestión de emergencias mediante el uso de tecnologías como el algoritmo de Dijkstra para encontrar rutas más cortas, modelos de asignación para elegir el hospital y la ambulancia más convenientes, y WebSockets para mantener actualizada la disponibilidad hospitalaria en tiempo real. Además, se utiliza PocketBase para el almacenamiento de datos médicos y mapas interactivos para una visualización intuitiva de incidentes y recursos. De forma complementaria, se incorpora realidad aumentada (RA) para identificar de manera visual el hospital más cercano desde el entorno.',
-      'Con este enfoque, se busca reducir los tiempos de respuesta, mejorar la asignación de recursos y aportar una solución innovadora y eficaz al sistema de emergencias médicas del país.'
+      'Este proyecto tiene como objetivo principal mejorar la detección temprana del cáncer de mama mediante la aplicación de técnicas de ciencia de datos , incluyendo análisis estadístico, aprendizaje automático y visualización de datos',
+      'Al aprovechar grandes volúmenes de información clínica e imágenes médicas, buscamos apoyar a los profesionales de la salud en la toma de decisiones más rápidas y precisas.'
 ]
 
     },
