@@ -1,0 +1,66 @@
+{
+  "type": "FeatureCollection",
+  "name": "lapaz-landmarks",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "plaza-murillo",
+        "name": "Plaza Murillo",
+        "description": "Plaza principal con la Catedral y el Palacio Quemado"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-68.119291, -16.495591]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "teleferico-rojo-estacion-central",
+        "name": "Teleférico Línea Roja · Estación Central",
+        "description": "Estación inicial del sistema de transporte por cable"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-68.165139, -16.505018]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "mercado-de-las-brujas",
+        "name": "Mercado de las Brujas",
+        "description": "Mercado tradicional de productos andinos y remedios"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-68.132292, -16.495052]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "mirador-killi-killi",
+        "name": "Mirador Killi Killi",
+        "description": "Mirador panorámico con vista 360° de la ciudad"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-68.128511, -16.489599]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "valle-de-la-luna",
+        "name": "Valle de la Luna",
+        "description": "Formaciones rocosas únicas a las afueras de La Paz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-68.095140, -16.564070]
+      }
+    }
+  ]
+}
