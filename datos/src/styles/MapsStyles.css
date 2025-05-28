@@ -1,0 +1,196 @@
+
+  
+  .header-banner {
+    background-color: #a5d2d6;
+    padding: 15px 20px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    background-image: linear-gradient(to right, #a5d6cb, #81c7c3);
+  }
+  
+  .header-banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><path d="M30,10 L70,10 L70,90 L30,90 Z" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="2"/><circle cx="25" cy="25" r="8" fill="rgba(255,255,255,0.3)"/><circle cx="75" cy="75" r="8" fill="rgba(255,255,255,0.3)"/></svg>');
+    opacity: 0.4;
+  }
+  /*maps*/
+  #root {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  
+  #map-container {
+    height: 100vh;      /* o 500px, lo que necesites */
+    width: 100%;
+    /* temporarily set the background color so we can tell where the map container is positioned */
+    background-color: lightgrey;
+    background-image:
+      linear-gradient(rgba(136, 214, 213, 0.555), rgba(151, 216, 215, 0.552)),   /* filtro */
+      url('../assets/img/about/ambulace2 (1).jpg');        /* foto */
+    background-size: cover, cover;
+    background-position: center, center;
+  }
+  .mapContainer {
+    width: 100%;
+    height: 100%;
+    background-image:
+      linear-gradient(rgba(136, 214, 213, 0.555), rgba(151, 216, 215, 0.552)),
+      url('../assets/img/about/ambulace2 (1).jpg');
+    background-size: cover, cover;
+    background-position: center, center;
+  }
+  .sidebar {
+    background-color: rgba(35, 55, 75, 0.366);
+    color: #fff;
+    padding: 6px 12px;
+    font-family: monospace;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 12px;
+    border-radius: 4px;
+  }
+  
+  .reset-button {
+    position: absolute;
+    top: 200px;
+    z-index: 1;
+    left: 300px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #39827b;
+    color: #ffffff;
+  }
+  .button-section {
+    
+  z-index: 1000;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #4c8882;
+    color: #ffffff;
+  }
+  .map-list-section {
+    
+  z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-image:
+      linear-gradient(rgba(136, 214, 213, 0.555), rgba(151, 216, 215, 0.552)),   /* filtro */
+      url('../assets/img/about/ambulace2 (1).jpg');        /* foto */
+    background-size: cover, cover;
+    background-position: center, center;
+    /* Capa oscura para bajar la opacidad sin afectar el contenido */
+    overflow: hidden;
+    width: 100%;
+    height: 100vh; /* o 500px, lo que necesites */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro para mejor contraste */
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .map-list-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: inherit;
+    filter: opacity(0.2); /* Baja la opacidad del fondo */
+    z-index: 0;
+    padding: 20px;
+  }
+  
+  .map-frame {
+    border: 10px solid teal;
+    flex-shrink: 0;
+    width: 100%; /* Ajusta el tamaño según necesites */
+    height: 100%; /* Ajusta la altura */
+    position: relative;
+    z-index: 1;
+    border-radius: 10px;
+  }
+  
+  #map-container {
+    width: 100%;
+    height: 100%;
+    
+    background-image:
+      linear-gradient(rgba(136, 214, 213, 0.555), rgba(151, 216, 215, 0.552)),   /* filtro */
+      url('../assets/img/about/ambulace2 (1).jpg');        /* foto */
+    background-size: cover, cover;
+    background-position: center, center;
+  }
+  
+  .list-container {
+    background: rgba(255, 255, 255, 0.8); /* Fondo claro para mejor legibilidad */
+    color: #282c34;
+    border-radius: 8px;
+    padding: 30px;
+    max-width: 80%;
+    z-index: 1;
+    position: relative;
+    width: 40%; /* Ajusta el tamaño según necesites */
+    height: 100%; /* Ajusta la altura */
+    text-align: left;
+  }
+  .list-container ul {
+    padding-left: 30px;   /* espacio para viñetas y texto */
+    margin: 0;            /* opcional: quita margen superior/inf */
+  }
+  
+  /* Botones de control */
+.control-buttons {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  gap: 10px;
+  
+  background-color: #E8F5E9;
+}
+
+.control-button {
+  background-color: #E8F5E9;
+  border: 2px solid #81c7c0;
+  color: #2e7a7d;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.control-button:hover {
+  background-color: #C8E6C9;
+  transform: translateY(-2px);
+}
+
+.panel-button {
+  background-color: #f0f0f0;
+  border: none;
+  color: #555;
+  padding: 8px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.panel-button.active {
+  background-color: #81b4c7;
+  color: white;
+}
+
+.panel-button:hover:not(.active) {
+  background-color: #e0e0e0;
+}
