@@ -11,6 +11,7 @@ import MainPage from '../pages/home';
 import SignUp from '../pages/signup';
 import SignIn from '../pages/signin';
 import ModeloPage from '../pages/modelo';
+import CamaraPage from '../pages/camaraGuiada';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -38,6 +39,8 @@ function App() {
         <Route path="/signup" element={<SignUp />} />
         <Route path="/signin" element={<SignIn />} />
         <Route path="/modelo" element={<ModeloPage />} />
+        <Route path="/camara-guiada" element={<CamaraPage />} />
+        {/* Redirect to home if no match */}
 
       </Routes>
     </div>
