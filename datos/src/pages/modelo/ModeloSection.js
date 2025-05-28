@@ -2,18 +2,19 @@ import React, { useState } from 'react';
 import Swal from 'sweetalert2';
 import { Sparkles, Upload, CheckCircle, FolderOpen, Rocket } from 'lucide-react';
 import aboutImg from '../../assets/img/about/cancermama.png';
-// Importa tu imagen de fondo aquí
 import backgroundImg from '../../assets/img/about/fondo.png';
 
 const ModeloSection = () => {
   const [selectedFile, setSelectedFile] = useState(null);
   const [previewURL, setPreviewURL] = useState('');
+  const [result, setResult] = useState(null);
 
   const handleImageChange = (e) => {
     const file = e.target.files[0];
     if (file) {
       setSelectedFile(file);
       setPreviewURL(URL.createObjectURL(file));
+      setResult(null); // Limpia resultados anteriores
     }
   };
 
@@ -30,7 +31,7 @@ const ModeloSection = () => {
     }
 
     const formData = new FormData();
-    formData.append('image', selectedFile);
+    formData.append('file', selectedFile);
 
     try {
       const response = await fetch('http://localhost:7860/predict', {
@@ -39,18 +40,18 @@ const ModeloSection = () => {
       });
 
       if (response.ok) {
+        const prediction = await response.json();
+        setResult(prediction);
         Swal.fire({
           icon: 'success',
-          title: '¡Imagen subida con éxito!',
-          text: 'El análisis se realizó correctamente.',
+          title: 'Análisis completado',
+          text: 'Revisa los resultados detallados más abajo.',
         });
-        setSelectedFile(null);
-        setPreviewURL('');
       } else {
         Swal.fire({
           icon: 'error',
           title: 'Error',
-          text: 'No se pudo subir la imagen. Intenta nuevamente.',
+          text: 'No se pudo analizar la imagen. Intenta nuevamente.',
         });
       }
     } catch (error) {
@@ -62,6 +63,15 @@ const ModeloSection = () => {
       });
     }
   };
+
+  const getTopPrediction = () => {
+    if (!result) return null;
+    return Object.entries(result).reduce((max, curr) =>
+      curr[1] > max[1] ? curr : max
+    );
+  };
+
+  const topPrediction = getTopPrediction();
 
   return (
     <div 
@@ -77,10 +87,9 @@ const ModeloSection = () => {
         margin: 0, 
       }}
     >
-      <div className="container py-5" style={{ overflowX: 'hidden' }}>
+      <div className="container py-5">
         <div className="row align-items-center gx-5">
-          {/* Imagen Izquierda */}
-          <div className="col-lg-6 mb-5 mb-lg-0 animate__fadeInLeft" style={{ paddingRight: '3rem' }}>
+          <div className="col-lg-6 mb-5 mb-lg-0">
             <div className="text-center">
               <img
                 src={aboutImg}
@@ -96,17 +105,14 @@ const ModeloSection = () => {
             </div>
           </div>
 
-          <div className="col-lg-6 animate__fadeInRight d-flex justify-content-center" style={{ paddingLeft: '3rem' }}>
+          <div className="col-lg-6 d-flex justify-content-center">
             <div
               className="card p-4 border-0 shadow-lg rounded-4"
               style={{
-                backgroundColor: '#ffe6f0', 
-                color: '#5a2a3c', 
+                background: 'linear-gradient(135deg, #ffe9ef 0%, #ffc9d7 50%, #ffbccd 100%)',
+                color: '#5a2a3c',
                 maxWidth: '500px',
                 width: '100%',
-                background: 'linear-gradient(135deg, #ffe9ef 0%, #ffc9d7 50%, #ffbccd 100%)',
-                border: '1px solid rgba(255, 255, 255, 0.2)',
-                boxShadow: '0 10px 25px rgba(0, 0, 0, 0.1)',
               }}
             >
               <div className="it-about-3-title-box">
@@ -221,6 +227,23 @@ const ModeloSection = () => {
                     </button>
                   </div>
                 </form>
+
+                {result && (
+                  <div className="mt-4 p-3 rounded shadow" style={{ backgroundColor: '#fff3f6' }}>
+                    <h5 className="mb-3" style={{ color: '#a12646' }}>Resultado del análisis:</h5>
+                    <ul className="list-unstyled">
+                      {Object.entries(result).sort((a, b) => b[1] - a[1]).map(([label, value]) => (
+                        <li key={label} style={{ padding: '4px 0', fontWeight: '500', color: label === topPrediction[0] ? '#c2185b' : '#5a2a3c' }}>
+                          {label}: <strong>{(value * 100).toFixed(2)}%</strong> {label === topPrediction[0] && '⬅️ más probable'}
+                        </li>
+                      ))}
+                    </ul>
+                    <p className="mt-3" style={{ fontSize: '0.95rem', color: '#5a2a3c' }}>
+                      Este modelo estima la probabilidad de que una mamografía tenga características benignas o malignas, según la densidad del tejido. Recuerda que este resultado no reemplaza un diagnóstico médico profesional.
+                    </p>
+                  </div>
+                )}
+
               </div>
             </div>
           </div>
