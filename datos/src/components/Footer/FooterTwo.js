@@ -58,7 +58,7 @@ const FooterTwo = (props) => {
                   </div>
                   <div className="it-footer-top-text">
                     <span>Correo electrónico:</span>
-                    <a href="mailto:innovacion@ucb.edu.bo">gatobyte@gmail.com</a>
+                    <a href="mailto:innovacion@ucb.edu.bo">deteccionrosa@gmail.com</a>
                   </div>
                 </div>
               </div>
