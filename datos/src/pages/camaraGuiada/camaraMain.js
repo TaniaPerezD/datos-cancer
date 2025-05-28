@@ -6,7 +6,7 @@ import Camara from './camaraSection';
 const CamaraMain = () => {
   return (
     <main>
-      <Breadcrumb title="Modelo" />
+      <Breadcrumb title="Camara Guiada" />
       <Camara />
     </main>
   );

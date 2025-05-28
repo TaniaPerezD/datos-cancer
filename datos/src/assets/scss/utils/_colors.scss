@@ -53,16 +53,16 @@ $dark-mode: (
     'white': #0E2A46,
     'black': #ffffff,
     'black-2': #4D5756,
-    'black-3': #f6917d,
+    'black-3': rgb(255,182,193),
     'yellow': #e9738e,
     'purple-2': #f77e66,
-    'purple-3': #f6917d,
+    'purple-3': rgb(255,182,193),
     'orange': #E09E45,
     'orange-2': #D97706,
     'orange-3': #7a958f
   ),
   'heading': (
-    'primary': #f6917d
+    'primary': rgb(255,182,193)
   ),
   'grey': (
     '1': #061320,
@@ -75,7 +75,7 @@ $dark-mode: (
     'body': #ffffff
   ),
   'theme': (
-    '1': #f6917d,
+    '1': rgb(255,182,193),
     '2': #b14d60,
     '3': #933056,
     '4': #f3decd,

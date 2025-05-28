@@ -31,7 +31,7 @@ const FooterTwo = (props) => {
                       target="_blank"
                       href="https://g.co/kgs/u81c7N6" rel="noreferrer"
                     >
-                      Análisis de Algoritmos
+                      Ingeniería de Datos
                     </a>
                   </div>
                 </div>
