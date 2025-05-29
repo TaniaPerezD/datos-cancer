@@ -31,7 +31,7 @@ const FooterTwo = (props) => {
                       target="_blank"
                       href="https://g.co/kgs/u81c7N6" rel="noreferrer"
                     >
-                      Análisis de Algoritmos
+                      Ingeniería de Datos
                     </a>
                   </div>
                 </div>
@@ -58,7 +58,7 @@ const FooterTwo = (props) => {
                   </div>
                   <div className="it-footer-top-text">
                     <span>Correo electrónico:</span>
-                    <a href="mailto:innovacion@ucb.edu.bo">gatobyte@gmail.com</a>
+                    <a href="mailto:innovacion@ucb.edu.bo">deteccionrosa@gmail.com</a>
                   </div>
                 </div>
               </div>

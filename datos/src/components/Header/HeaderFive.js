@@ -217,7 +217,7 @@ const HeaderFive = (props) => {
               </div>
               <div className="itoffcanvas__info-address">
                 <span>Correo electrónico</span>
-                <a href="maito:innovacion@ucb.edu.bo">gatobyte@gmail.com</a>
+                <a href="maito:innovacion@ucb.edu.bo">deteccionrosa@gmail.com</a>
               </div>
             </div>
             <div className="it-info-wrapper mb-20 d-flex align-items-center">

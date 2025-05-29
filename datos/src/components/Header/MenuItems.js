@@ -22,8 +22,17 @@ const MenuItems = ({ mobileMenu }) => {
           <span>Home</span>
         </Link>
       </li>
+      <li>
+        <Link to="/modelo" onClick={handleClick}>
+          <span>Modelo</span>
+        </Link>
+      </li>
 
-      
+      <li>
+        <Link to="/camara-guiada" onClick={handleClick}>
+          <span>Camara de Exploración</span>
+        </Link>
+      </li>
       <li>
         <ThemeToggle />
       </li>
